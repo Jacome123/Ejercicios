@@ -5,5 +5,5 @@ jobs:
       - image: cimg/node:16.17.0  
     steps:
       - checkout
-      - run: npm install --legacy-peer-deps
+      - run: npm install 
       - run: npm test
