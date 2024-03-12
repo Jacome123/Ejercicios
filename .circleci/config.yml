@@ -2,10 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "cimg/node:16.17.1"
-
-    working_directory: ~/repo
-    
+      - image: cimg/node:16.17.0  
     steps:
       - checkout
       - run: npm install --legacy-peer-deps
